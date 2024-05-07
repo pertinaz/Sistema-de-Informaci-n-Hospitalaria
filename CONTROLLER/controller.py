@@ -1,0 +1,1 @@
+from MODELO import doctor,hospital
