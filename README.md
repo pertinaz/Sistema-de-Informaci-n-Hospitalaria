@@ -1,6 +1,10 @@
 # Sistema-de-Informaci-n-Hospitalaria
 Arquitectura de Tres Capas. Sin embargo, esta arquitectura todavía presenta un alto grado de acoplamiento por no utilizar aun el concepto de interfaz.
 
+# Diagrama de clases:
+![Diagrama de clases](https://github.com/pertinaz/Sistema-de-Informaci-n-Hospitalaria/assets/87156289/eb95178a-5864-4bc0-af78-d666631e353f)
+
+
 # Diagrama de casos de uso:
 Los diagramas de casos de uso sirven para especificar la comunicación y el comportamiento de un sistema mediante su interacción con los usuarios y/u otros sistemas. O lo que es igual, un diagrama que muestra la relación entre los actores y los casos de uso en un sistema.
 ![Diagrama de casos de uso](https://github.com/pertinaz/Sistema-de-Informaci-n-Hospitalaria/assets/87156289/7b09a159-b4e1-4eec-a583-921fa68935e3)
