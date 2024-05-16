@@ -1,18 +1,18 @@
 from MODELO.hospital import Hospital
 class Doctor(Hospital):
-    def __init__(self,doctorName,speciality,dni):
+    doctorList = []
+    def __init__(self,doctorName,speciality,dni, hospital):
         self.doctorName = doctorName
         self.speciality = speciality
         self.dni = dni
+        self.hospital = hospital
+        Doctor.doctorList.append(self)
+        Hospital.addDoctor(self)
 
-        self.doctorList = []
-    @classmethod
-    def searchByDNI(cls,dni):
-        for doctor in cls.doctorList:
+    @staticmethod
+    def searchByDNI(dni):
+        for doctor in Doctor.doctorList:
             if dni == doctor.dni:
-                print(f"Doctor: {cls.doctorName}")
-                print(f"Especialdad: {Doctor.speciality}")
-                print(f"DNI: {Doctor.dni}")
-            else:
-                raise('Doctor not found')
+                return doctor
+            return None
 
